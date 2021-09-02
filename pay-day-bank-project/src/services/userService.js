@@ -16,5 +16,15 @@ export default class UserService{
        
         return axios.put("http://localhost:8080/api/users/verify?emailAddress="+user.emailAddress+"&password="+user.password)
     }
+    getByUserId(id)
+    {
+        
+        return axios.get("http://localhost:8080/api/users/getByUserId?id="+id)
+    }
+    putUser(user)
+    {
+        console.log(axios.put("http://localhost:8080/api/users/update?"+user.emailAddress+"&id"+user.id+"&name="+user.name+"&password="+user.password+"&title="+user.title))
+        return axios.put("http://localhost:8080/api/users/update?"+user.emailAddress+"&id"+user.id+"&name="+user.name+"&password="+user.password+"&title="+user.title)
+    }
 
 }

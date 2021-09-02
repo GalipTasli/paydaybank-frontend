@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { Link } from 'react-router-dom';
 import {  Table,Button } from 'semantic-ui-react'
 import ProductService from '../services/productService';
 
@@ -29,7 +30,7 @@ export default function ProductList() {
               <Table.Cell>{product.description}</Table.Cell>
               <Table.Cell>{product.price}</Table.Cell>
               <Table.Cell>{product.available.toString()}</Table.Cell>
-              <Table.Cell> <Button size='big' primary color='white'>Detay</Button></Table.Cell>
+              <Table.Cell> <Link to="/Dashboard/ProductList/ProductDetails"> <Button size='big' primary color='white'>Detay</Button></Link></Table.Cell>
               
             </Table.Row>
           ))}

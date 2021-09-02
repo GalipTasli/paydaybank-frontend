@@ -48,9 +48,9 @@ function App() {
       <Route exact path="/Register" component={Register}></Route>
       <Route exact path="/Dashboard" component={Dashboard}></Route> 
       <Route exact path="/Dashboard/ProductList" component={ProductList}></Route>
-      <Route exact path="/Dashboard/ProductList/ProductDetails" component={ProductDetails}></Route>
+      <Route exact path="/Dashboard/ProductList/ProductDetails/:id" component={ProductDetails}></Route>
       <Route exact path="/Dashboard/UserList" component={UserList}></Route>
-      <Route exact path="/Dashboard/UserList/UserEdit" component={UserEdit}></Route>
+      <Route exact path="/Dashboard/UserList/UserEdit/:id" component={UserEdit}></Route>
       </Container>
       
     </div>

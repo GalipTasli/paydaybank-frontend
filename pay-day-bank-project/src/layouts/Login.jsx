@@ -68,7 +68,7 @@ export default function Login() {
            
            <FormField>
            <Button size='big' primary onClick={handleSubmit}> <Icon name="sign-in"></Icon> Giriş Yap</Button>
-             {dedd.ver===true && <meta httpEquiv="refresh" content="3;http://localhost:3000/Dashboard"></meta>
+             {dedd.ver===true && <meta httpEquiv="refresh" content="1;http://localhost:3000/Dashboard"></meta>
              }
              {dedd.ver===false && 
            

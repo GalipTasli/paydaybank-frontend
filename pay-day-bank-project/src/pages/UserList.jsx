@@ -1,6 +1,7 @@
 import React,{  useState,useEffect } from "react";
 import {  Table,Button } from 'semantic-ui-react'
 import UserService from "../services/userService";
+import { Link } from 'react-router-dom';
 
 
 export default function UserList(){
@@ -17,6 +18,7 @@ return(
         <Table  celled inverted selectable>
     <Table.Header>
       <Table.Row>
+      <Table.HeaderCell><h3>Id</h3></Table.HeaderCell>
         <Table.HeaderCell><h3>ismi</h3></Table.HeaderCell>
         <Table.HeaderCell><h3>ünvanı</h3> </Table.HeaderCell>
         <Table.HeaderCell><h3>email adresi</h3></Table.HeaderCell>
@@ -26,10 +28,11 @@ return(
     <Table.Body>
     {users.map((user)=> (
        <Table.Row>
+           <Table.Cell>{user.id}</Table.Cell>
            <Table.Cell>{user.name}</Table.Cell>
            <Table.Cell>{user.title}</Table.Cell>
            <Table.Cell>{user.emailAddress}</Table.Cell>
-           <Table.Cell><Button size='big' primary >Detay</Button></Table.Cell>
+           <Table.Cell><Link to={"/Dashboard/UserList/UserEdit/"+user.id}> <Button size='big' primary >Detay</Button></Link></Table.Cell>
        </Table.Row>
     ))}
     </Table.Body>
