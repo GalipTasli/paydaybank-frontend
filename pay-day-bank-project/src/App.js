@@ -6,16 +6,21 @@ import { Container } from 'semantic-ui-react';
 import Login from './layouts/Login';
 import Register from './layouts/Register';
 import {Route} from 'react-router-dom';
+import ProductList from './pages/ProductList';
+import ProductDetails from './pages/ProductDetails';
+import UserList from './pages/UserList';
+import UserEdit from './pages/UserEdit';
+import Navi from './pages/Navi';
 
 
 function App() {
   return (
+
     <div className="App">
-      
-      <Route exact path="/" component={Login}></Route>
-      <Route exact path="/Register" component={Register}></Route>
-      <Route exact path="/Dashboard" component={Dashboard}></Route> 
-      
+            <Navi></Navi>
+           
+     
+                
       
       <Container className="main">
          <style>
@@ -39,7 +44,13 @@ function App() {
     }
     `}
     </style>
-     
+    <Route exact path="/" component={Login}></Route>
+      <Route exact path="/Register" component={Register}></Route>
+      <Route exact path="/Dashboard" component={Dashboard}></Route> 
+      <Route exact path="/Dashboard/ProductList" component={ProductList}></Route>
+      <Route exact path="/Dashboard/ProductList/ProductDetails" component={ProductDetails}></Route>
+      <Route exact path="/Dashboard/UserList" component={UserList}></Route>
+      <Route exact path="/Dashboard/UserList/UserEdit" component={UserEdit}></Route>
       </Container>
       
     </div>

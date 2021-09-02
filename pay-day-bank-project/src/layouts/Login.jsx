@@ -13,6 +13,7 @@ export default function Login() {
 
     })
     const initialValues={emailAddress:" ",name:" ",password:" ",title:" ",id:0}
+    const dedd={ver:""}
     
     return (
         <div   >
@@ -39,13 +40,16 @@ export default function Login() {
         }
         let userService = new UserService()
         userService.verificationEmailandPassword(User).then((result)=>{
-         console.log(result.data.success)
+         
+         dedd.ver=result.data.success
+        
         }
         )
        
         
       }}
       >
+       
         {({handleSubmit})=>(
           
          <Form  className="ui form" onSubmit={handleSubmit} >
@@ -63,9 +67,13 @@ export default function Login() {
            
            
            <FormField>
-           <Link to="/Dashboard">
-             <Button size='big' primary onClick={handleSubmit}> <Icon name="sign-in"></Icon> Giriş Yap</Button>
-             </Link>
+           <Button size='big' primary onClick={handleSubmit}> <Icon name="sign-in"></Icon> Giriş Yap</Button>
+             {dedd.ver===true && <meta httpEquiv="refresh" content="3;http://localhost:3000/Dashboard"></meta>
+             }
+             {dedd.ver===false && 
+           
+             <Label>lütfen bilgilerinzi doğru giriniz </Label>
+             } 
            </FormField>
     
         </Form>
