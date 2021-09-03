@@ -27,7 +27,7 @@ return(
     </Table.Header>
     <Table.Body>
     {users.map((user)=> (
-       <Table.Row>
+       <Table.Row key={user.id}>
            <Table.Cell>{user.id}</Table.Cell>
            <Table.Cell>{user.name}</Table.Cell>
            <Table.Cell>{user.title}</Table.Cell>

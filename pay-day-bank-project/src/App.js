@@ -14,13 +14,14 @@ import Navi from './pages/Navi';
 
 
 function App() {
+  
   return (
 
     <div className="App">
-            <Navi></Navi>
+           
            
      
-                
+          <Navi></Navi>
       
       <Container className="main">
          <style>

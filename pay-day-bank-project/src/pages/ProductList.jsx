@@ -30,7 +30,7 @@ export default function ProductList() {
               <Table.Cell>{product.description}</Table.Cell>
               <Table.Cell>{product.price}</Table.Cell>
               <Table.Cell>{product.available.toString()}</Table.Cell>
-              <Table.Cell> <Link to="/Dashboard/ProductList/ProductDetails"> <Button size='big' primary color='white'>Detay</Button></Link></Table.Cell>
+              <Table.Cell> <Link to="/Dashboard/ProductList/ProductDetails"> <Button size='big' primary >Detay</Button></Link></Table.Cell>
               
             </Table.Row>
           ))}

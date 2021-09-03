@@ -6,14 +6,14 @@ import ProductList from '../pages/ProductList'
 import UserEdit from '../pages/UserEdit'
 import {Route} from 'react-router-dom';
 import ProductDetails from '../pages/ProductDetails';
-
+import Navi from '../pages/Navi';
 
 
 export default function Dashboard() {
     return (
         <div>
-      
             
+     
            <Grid>
                <Grid.Row>
                    <Grid.Column width={4}>

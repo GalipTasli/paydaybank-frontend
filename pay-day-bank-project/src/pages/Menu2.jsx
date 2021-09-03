@@ -9,12 +9,12 @@ export default function Menu2() {
          <Menu inverted pointing vertical>
         <Menu.Item>
         <Link to="/Dashboard/ProductList">
-           <Button primary size= "big"  color='white' >ürünler</Button>
+           <Button primary size= "big"  >ürünler</Button>
            </Link>
         </Menu.Item>
         <Menu.Item > 
           <Link to="/Dashboard/userList">
-          <Button primary size= "big" color='white'> kullanıcılar</Button>
+          <Button primary size= "big" > kullanıcılar</Button>
           </Link>
         </Menu.Item>
         
