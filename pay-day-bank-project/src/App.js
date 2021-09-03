@@ -23,29 +23,30 @@ function App() {
      
           <Navi></Navi>
       
-      <Container className="main">
+      
          <style>
       {`
-      html, body {
-        background-color: #252839 !important;
-      }
-      p {
-        align-content: center;
-        background-color: #495285;
-        color: #fff;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 6em;
-      }
-      p > span {
-        opacity: 0.4;
-        text-align: center;
-      }
+     html, body {
+      background-color: #252839 !important;
     }
+    p {
+      align-content: center;
+      background-color: #495285;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      min-height: 6em;
+    }
+    p > span {
+      opacity: 0.4;
+      text-align: center;
+    }
+  }
     `}
     </style>
-    <Route exact path="/" component={Login}></Route>
+    <Container className="main">
+      <Route exact path="/" component={Login}></Route>
       <Route exact path="/Register" component={Register}></Route>
       <Route exact path="/Dashboard" component={Dashboard}></Route> 
       <Route exact path="/Dashboard/ProductList" component={ProductList}></Route>
