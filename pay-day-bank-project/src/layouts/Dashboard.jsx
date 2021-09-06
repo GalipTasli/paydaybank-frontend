@@ -1,7 +1,5 @@
 import React from 'react'
-import Menu2 from '../pages/Menu2'
-import {  Grid } from 'semantic-ui-react'
-import UserList from '../pages/UserList'
+
 
 
 export default function Dashboard() {

@@ -12,7 +12,9 @@ import UserList from './pages/UserList';
 import UserEdit from './pages/UserEdit';
 import Navi from './pages/Navi';
 import ProductAdd from './pages/ProductAdd';
-import Menu2 from './pages/Menu2'
+import DeleteProduct from './pages/DeleteProduct';
+import Deleteuser from './pages/Deleteuser';
+
 
 
 function App() {
@@ -55,8 +57,10 @@ function App() {
       <Route exact path="/Dashboard/ProductList" component={ProductList}></Route>
       <Route exact path="/Dashboard/ProductList/ProductAdd" component={ProductAdd}></Route>
       <Route exact path="/Dashboard/ProductList/ProductDetails/:id" component={ProductDetails}></Route>
+      <Route exact path="/Dashboard/ProductList/deleteproduct/:id" component={DeleteProduct}></Route>  
       <Route exact path="/Dashboard/UserList" component={UserList}></Route>
       <Route exact path="/Dashboard/UserList/UserEdit/:id" component={UserEdit}></Route>
+      <Route exact path="/Dashboard/UserList/deletuser/:id" component={Deleteuser}></Route>
       </Container>
       
     </div>

@@ -5,6 +5,7 @@ import ProductService from '../services/productService';
 
 
 export default function ProductList() {
+
     const [products, setProducts] = useState([]);
     useEffect(()=>{
         let produtservice = new ProductService()
@@ -31,10 +32,16 @@ export default function ProductList() {
               <Table.Cell>{product.price}</Table.Cell>
               <Table.Cell>{product.available.toString()}</Table.Cell>
               <Table.Cell> 
-                <Link to={"/Dashboard/ProductList/ProductDetails/"+product.id}>
-                   <Button size='big' primary >Detay</Button> 
-                </Link>
-                <Button color='red'>Sil</Button>
+              <Button.Group>
+              <Link to={"/Dashboard/ProductList/ProductDetails/"+product.id}>
+                  <Button positive size='big' primary>Detay</Button>
+                  </Link>
+                  <Button.Or primary/>
+                  <Link to={"/Dashboard/ProductList/deleteproduct/"+product.id}> 
+                  <Button  size='big'  color='red'>Sil</Button>
+                  </Link>
+              </Button.Group>
+                
                 </Table.Cell>
               
             </Table.Row>

@@ -32,7 +32,17 @@ return(
            <Table.Cell>{user.name}</Table.Cell>
            <Table.Cell>{user.title}</Table.Cell>
            <Table.Cell>{user.emailAddress}</Table.Cell>
-           <Table.Cell><Link to={"/Dashboard/UserList/UserEdit/"+user.id}> <Button size='big' primary >Detay</Button></Link><Button color='red'>Sil</Button></Table.Cell>
+           <Table.Cell>
+           <Button.Group  >
+           <Link to={"/Dashboard/UserList/UserEdit/"+user.id}>
+                  <Button positive size='big' primary>Detay</Button>
+                  </Link>
+                  <Button.Or primary/>
+                  <Link to={"/Dashboard/UserList/deletuser/"+user.id}> 
+                  <Button  size='big'  color='red'>Sil</Button>
+                  </Link>
+              </Button.Group>
+              </Table.Cell>
        </Table.Row>
     ))}
     </Table.Body>

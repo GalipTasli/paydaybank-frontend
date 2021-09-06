@@ -13,7 +13,7 @@ export default class ProductService{
     }
     addProduct(product)
     {
-        return axios.post("http://localhost:8080/api/products/add?available="+product.available+"&description="+product.description+"&id="+product.id+"&name="+product.name+"&price="+product.price)
+        return axios.post("http://localhost:8080/api/products/add?available="+product.available+"&description="+product.description+"&name="+product.name+"&price="+product.price)
     }
     deleteProduct(id)
     {
