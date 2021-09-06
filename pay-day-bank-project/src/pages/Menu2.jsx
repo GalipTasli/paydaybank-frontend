@@ -6,13 +6,13 @@ export default function Menu2() {
     return (
         <div >
           
-         <Menu inverted pointing vertical>
-        <Menu.Item>
+         <Menu inverted  >
+        <Menu.Item position='right'>
         <Link to="/Dashboard/ProductList">
            <Button primary size= "big" content="___ürünler___"  ></Button>
            </Link>
         </Menu.Item>
-        <Menu.Item > 
+        <Menu.Item position='left'> 
           <Link to="/Dashboard/userList">
           <Button primary size= "big" content="_Kullanıcılar_" ></Button>
           </Link>

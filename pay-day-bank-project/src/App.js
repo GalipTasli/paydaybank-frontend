@@ -11,6 +11,8 @@ import ProductDetails from './pages/ProductDetails';
 import UserList from './pages/UserList';
 import UserEdit from './pages/UserEdit';
 import Navi from './pages/Navi';
+import ProductAdd from './pages/ProductAdd';
+import Menu2 from './pages/Menu2'
 
 
 function App() {
@@ -23,7 +25,8 @@ function App() {
      
           <Navi></Navi>
       
-      
+          <Container className="main">
+   
          <style>
       {`
      html, body {
@@ -45,11 +48,12 @@ function App() {
   }
     `}
     </style>
-    <Container className="main">
+    
       <Route exact path="/" component={Login}></Route>
       <Route exact path="/Register" component={Register}></Route>
       <Route exact path="/Dashboard" component={Dashboard}></Route> 
       <Route exact path="/Dashboard/ProductList" component={ProductList}></Route>
+      <Route exact path="/Dashboard/ProductList/ProductAdd" component={ProductAdd}></Route>
       <Route exact path="/Dashboard/ProductList/ProductDetails/:id" component={ProductDetails}></Route>
       <Route exact path="/Dashboard/UserList" component={UserList}></Route>
       <Route exact path="/Dashboard/UserList/UserEdit/:id" component={UserEdit}></Route>

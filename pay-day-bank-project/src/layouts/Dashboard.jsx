@@ -7,19 +7,8 @@ import UserList from '../pages/UserList'
 export default function Dashboard() {
     return (
         <div  >
-            
+            <h2>Ürün Ve Kullanıcı Yönetim Panaline Hoşgeldiniz</h2>
      
-           <Grid >
-               <Grid.Row>
-                   <Grid.Column width={4}>
-                        <Menu2></Menu2>
-                   </Grid.Column>
-                   <Grid.Column width={12}>
-                   <UserList></UserList>
-                   </Grid.Column>
-               </Grid.Row>
-               
-           </Grid>
         
            
         </div>

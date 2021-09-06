@@ -2,6 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import { Button, Container, Menu,Icon } from 'semantic-ui-react'
 
+
 export default function Navi() {
     return (
       <div>
@@ -12,7 +13,17 @@ export default function Navi() {
                   <Icon name='home' size='big' />   <br /> Pay Day Bank
                   </Link>
                    </Menu.Item>
-        
+                   <Menu.Item >
+                   <Link to="/Dashboard/userList">
+                  <Icon name='user' size='big' />   <br /> Kullanıcılar
+                  </Link>
+                   </Menu.Item>
+                   <Menu.Item >
+                   <Link to="/Dashboard/ProductList">
+                  <Icon name=' product hunt' size='big' />   <br /> Ürünler
+                  </Link>
+                   </Menu.Item>
+                   
 
         <Menu.Menu position='right'>
           
