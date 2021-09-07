@@ -35,7 +35,7 @@ return(
            <Table.Cell>
            <Button.Group  >
            <Link to={"/Dashboard/UserList/UserEdit/"+user.id}>
-                  <Button positive size='big' primary>Detay</Button>
+                  <Button positive size='big' primary>Güncele</Button>
                   </Link>
                   <Button.Or primary/>
                   <Link to={"/Dashboard/UserList/deletuser/"+user.id}> 

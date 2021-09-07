@@ -87,9 +87,9 @@ export default function ProductDetails() {
            </Field>  
            < br></br>   
            <FormField>
-           <Link to={"/"}>
-             <Button primary onClick={handleSubmit}>  Kaydet</Button>
-             </Link>
+           
+             <Button primary onClick={handleSubmit}> <Link to={"/Dashboard/ProductList"}>  Kaydet </Link></Button>
+             
              
            </FormField>
     

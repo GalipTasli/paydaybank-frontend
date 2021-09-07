@@ -79,9 +79,9 @@ export default function UserEdit() {
             </FormField>
            
            <FormField>
-           <Link to={"/Dashboard/userList"}>
-             <Button primary onClick={handleSubmit}>  Kaydet</Button>
-             </Link>
+           
+             <Button primary onClick={handleSubmit}> <Link to={"/Dashboard/userList"}> Kaydet  </Link></Button>
+           
              
            </FormField>
     

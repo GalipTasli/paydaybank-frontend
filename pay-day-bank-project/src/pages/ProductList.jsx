@@ -34,7 +34,7 @@ export default function ProductList() {
               <Table.Cell> 
               <Button.Group>
               <Link to={"/Dashboard/ProductList/ProductDetails/"+product.id}>
-                  <Button positive size='big' primary>Detay</Button>
+                  <Button positive size='big' primary>Güncele</Button>
                   </Link>
                   <Button.Or primary/>
                   <Link to={"/Dashboard/ProductList/deleteproduct/"+product.id}> 

@@ -75,9 +75,9 @@ export default function register() {
             </FormField>
            
            <FormField>
-           <Link to="/">
-             <Button type="button" primary onClick={handleSubmit}>  Kaydet</Button>
-             </Link>
+           
+             <Button type="button" primary onClick={handleSubmit}> <Link to={"/"}> Kaydet</Link></Button>
+             
              
            </FormField>
     
